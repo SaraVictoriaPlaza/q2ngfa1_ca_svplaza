@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vh;
+    background-color:rgb(56, 56, 104) ;
+    color: white;
+}
+
+.links a{
+    margin-left: 1vw;
+    color: white;
+}
+
+body{
+    background-color: bisque;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+
+    }
+    .pagetitle{
+        background-color: rgb(99, 99, 159);
+        padding:1vw;
+        color:black;
+    }
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 100px;
+    }
+
+    .links a{
+        color: black;
+        padding: 12px 16px;
+        display: block;
+        box-shadow: 0px 8px 16px 0px rgba(192, 37, 151, 0.99);
+        z-index: 1;
+        background-color: rgb(153, 153, 182);
+    }
+
+    .links a:hover{background-color: white;}
+     nav:hover .links{display:block;}
+     nav:hover .pagetitle{background-color: rgb(147, 147, 236);}
+}
+
+
